@@ -1,0 +1,22 @@
+.about-us {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 5.625rem 7.625rem;
+}
+
+.about-us__description {
+  padding-right: 1rem;
+}
+
+.about-us__img {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-left: 1px solid var(--black);
+}
+
+.about-us__img img {
+  width: 26rem;
+  border-radius: 2rem;
+}

@@ -1,0 +1,67 @@
+nav {
+  flex-grow: 1;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 4rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  display: block;
+  color: var(--white);
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li:last-child {
+  background-color: var(--primary);
+  border-radius: 0.325rem;
+  text-align: center;
+}
+
+nav ul li:last-child a {
+  padding: 0.625rem 2rem;
+}
+
+header {
+  height: 6.25rem;
+  width: 80%;
+  margin: auto;
+  border-bottom: 2px solid var(--white);
+  display: flex;
+  align-items: center;
+  color: var(--white);
+}
+
+.brand {
+  display: flex;
+}
+
+.brand__logo {
+  width: 4em;
+  height: 4rem;
+}
+
+.brand__name {
+  text-align: center;
+}
+
+.brand__name h1 {
+  font-weight: normal;
+  margin-bottom: 0.25rem;
+}
+
+.brand__name img {
+  width: 4rem;
+}
