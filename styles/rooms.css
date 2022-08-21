@@ -1,0 +1,30 @@
+.rooms {
+  padding-bottom: 5.625rem;
+}
+
+.rooms__wrapper {
+  max-width: var(--content-max-width);
+  display: grid;
+  grid-template-columns: 27rem 1fr;
+  align-items: center;
+  margin: auto;
+}
+
+.rooms h1 {
+  display: block;
+  margin-top: 0;
+}
+
+.rooms__img {
+  border-right: 1px solid var(--black);
+}
+
+.rooms__img img {
+  width: 24rem;
+  border-radius: 2rem;
+  box-shadow: var(--img-shadow);
+}
+
+.rooms__content {
+  padding-left: 2rem;
+}
