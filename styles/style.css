@@ -38,3 +38,16 @@ body {
 .land-message h3 {
   margin: 0;
 }
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--primary);
+  height: 3.25rem;
+  color: white;
+  box-shadow: var(--img-shadow);
+  border: none;
+  border-radius: 0.5rem;
+}

@@ -1,0 +1,26 @@
+.gallery {
+  padding-bottom: 5.625rem;
+  max-width: var(--content-max-width);
+  margin: auto;
+}
+
+.gallery h1 {
+  margin: 0;
+}
+
+.gallery__wrapper {
+  display: flex;
+  gap: 1.5rem;
+  padding-top: 2.5rem;
+}
+
+.gallery__images {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gallery img {
+  box-shadow: var(--img-shadow);
+  border-radius: 1.4rem;
+}

@@ -11,10 +11,12 @@
     <link rel="stylesheet" type="text/css" href="./styles/about-us.css" />
     <link rel="stylesheet" type="text/css" href="./styles/rooms.css" />
     <link rel="stylesheet" type="text/css" href="./styles/amenities.css" />
-
+    <link rel="stylesheet" type="text/css" href="./styles/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/reviews.css" />
     <title>Mon Cricket Hotel</title>
   </head>
   <body>
+    <!-- Landing Page -->
     <section class="main">
       <header>
         <div class="brand">
@@ -43,6 +45,7 @@
         <h1>Welcome to Mon Cricket Hotel</h1>
       </div>
     </section>
+    <!-- About Us -->
     <section class="about-us">
       <div class="about-us__content">
         <h1>Our Hotel</h1>
@@ -57,6 +60,7 @@
         <img src="./assets/about-us/hotel.svg" alt="" />
       </div>
     </section>
+    <!-- Rooms -->
     <section class="rooms">
       <h1>Rooms</h1>
       <div class="rooms__wrapper">
@@ -75,6 +79,7 @@
         </div>
       </div>
     </section>
+    <!-- Amenities -->
     <section class="amenities">
       <h1>Property Amenities</h1>
       <div class="amenities__wrapper">
@@ -85,7 +90,6 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam
           </p>
         </div>
-
         <div class="card">
           <img src="./assets/amenities/wifi.svg" alt="" />
           <h3 class="card__title">Free WiFi</h3>
@@ -111,5 +115,84 @@
         </div>
       </div>
     </section>
+    <!-- Gallery -->
+    <section class="gallery">
+      <h1>Gallery</h1>
+      <div class="gallery__wrapper">
+        <div class="gallery__images">
+          <img src="./assets/gallery/bar.svg" alt="" />
+          <img src="./assets/gallery/restaurant.svg" alt="" />
+        </div>
+        <img src="./assets/gallery/lounge.svg" alt="" />
+        <div class="gallery__images">
+          <img src="./assets/gallery/spa.svg" alt="" />
+          <button class="btn">
+            Explore More
+            <img src="./assets/arrow.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Reviews -->
+    <section class="reviews">
+      <h1>Reviews</h1>
+      <div class="reviews__wrapper">
+        <article class="reviews__card">
+          <div class="review-header">
+            <div class="review-header__profile">
+              <img
+                src="./assets/reviews/profile-mock1.svg"
+                alt="profile image"
+              />
+              <div class="review-header__name-country">
+                <p>Mia Lopez</p>
+                <p>Spain</p>
+              </div>
+            </div>
+            <p class="review-header__date">16.06.2022</p>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
+            purus sit amet luctus venenatis, lectus magna fringilla urna,
+            porttitor rhoncus dolor purus non enim praesent elementum facilisis
+            leo, vel
+          </p>
+        </article>
+        <article class="reviews__card">
+          <div class="review-header">
+            <div class="review-header__profile">
+              <img
+                src="./assets/reviews/profile-mock2.svg"
+                alt="profile image"
+              />
+              <div class="review-header__name-country">
+                <p>Mia Lopez</p>
+                <p>Spain</p>
+              </div>
+            </div>
+            <p class="review-header__date">16.06.2022</p>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
+            purus sit amet luctus venenatis, lectus magna fringilla urna,
+            porttitor rhoncus dolor purus non enim praesent elementum facilisis
+            leo, vel
+          </p>
+        </article>
+        <div class="share-review">
+          <input type="text" class="share-review__text" />
+          <button class="btn share-review__share">Share</button>
+          <button class="btn share-review__more">More Reviews</button>
+        </div>
+      </div>
+    </section>
+    <!-- TODO Contact Us -->
+    <!-- <section class="contact-us">
+      <form action="">
+        <input type="text" />
+        <input type="text" />
+        <input type="email" />
+      </form>
+    </section> -->
   </body>
 </html>
