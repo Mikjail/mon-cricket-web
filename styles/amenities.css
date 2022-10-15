@@ -1,17 +1,18 @@
 .amenities {
   max-width: var(--content-max-width);
   margin: auto;
+  padding-bottom: 5.625rem;
 }
 
-.amenities h1 {
+.amenities h1,
+.amenities p {
   margin: 0;
 }
 
 .amenities__wrapper {
   display: flex;
-  justify-content: center;
-  gap: 50px;
-  padding: 5.625rem 0;
+  justify-content: space-between;
+  padding-top: 2.5rem;
 }
 
 .card {
@@ -21,10 +22,10 @@
   justify-content: center;
   border-radius: 1rem;
   box-shadow: var(--img-shadow);
-  width: 10rem;
-  height: 10rem;
+  width: 13rem;
+  padding: 3rem 0;
 }
 
-.card img {
-  width: 3rem;
+.card p {
+  text-align: center;
 }
