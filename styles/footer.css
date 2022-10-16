@@ -1,0 +1,12 @@
+footer {
+  display: flex;
+  align-items: center;
+  background-color: var(--primary);
+  height: 600px;
+}
+
+footer .location-map {
+  height: 400px;
+  width: 600px;
+  border-radius: 1rem;
+}
