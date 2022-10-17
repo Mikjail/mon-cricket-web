@@ -31,26 +31,26 @@
         </div>
         <nav>
           <ul>
-            <li><a href="rooms">Rooms</a></li>
-            <li><a href="gallery">Gallery</a></li>
-            <li><a href="about">About</a></li>
-            <li><a href="contact">Contact</a></li>
-            <li><a href="book">Book Now</a></li>
+            <li><a class="scrollLink" href="#rooms">Habitaciones</a></li>
+            <li><a class="scrollLink" href="#about-us">Nosotros</a></li>
+            <li><a class="scrollLink" href="#amenities">Servicios</a></li>
+            <li><a class="scrollLink" href="#contactus">Contacto</a></li>
           </ul>
         </nav>
       </header>
       <div class="land-message">
-        <h3>Discover los Andes with us!</h3>
-        <h1>Welcome to Mon Cricket Hotel</h1>
+        <h3>Descrubre los Andes con nosotros!</h3>
+        <h1>Bienvenido a Mon Cricket Hotel</h1>
       </div>
     </section>
-    <section class="about-us">
+    <section class="about-us" id="about-us">
       <div class="about-us__content">
-        <h1>Our Hotel</h1>
+        <h1>Nuestro Hotel</h1>
         <p>
-          Mon Cricket is located in a beautiful town San Cristobal in a
-          mountainous region of Western Venezuelain in the northern Andes
-          overlooking the Torbes River and just 56 km from the Colombian border.
+          Somos una empresa de servicios hoteleros que busca llenar las más
+          altas expectativas para atraer visitantes a nuestra ciudad al momento
+          de elegirla como su destino, ya sea por negocios, turismo, vacaciones
+          o simplemente deseen disfrutar del más relajante descanso.
         </p>
         <a href="#">Read more</a>
       </div>
@@ -58,15 +58,15 @@
         <img src="./assets/about-us/hotel-fachada.jpeg" alt="" />
       </div>
     </section>
-    <section class="rooms">
+    <section class="rooms" id="rooms">
       <div class="rooms__wrapper">
         <div class="rooms__img">
-          <h1>Rooms</h1>
+          <h1>Habitaciones</h1>
           <img src="./assets/rooms/deluxe.jpeg" alt="" />
         </div>
         <div class="rooms__content">
           <h2>Deluxe</h2>
-          <h5>Room Size 50 sqm</h5>
+          <h5>Tamaño 30 ms2</h5>
           <p>
             Mon Cricket is located in a beautiful town San Cristobal in a
             mountainous region of Western Venezuelain in the northern Andes
@@ -76,8 +76,8 @@
         </div>
       </div>
     </section>
-    <section class="amenities">
-      <h1>Property Amenities</h1>
+    <section class="amenities" id="amenities">
+      <h1>Sevicios</h1>
       <div class="amenities__wrapper">
         <div class="card">
           <img src="./assets/amenities/parking.svg" alt="" />
@@ -100,69 +100,108 @@
         </div>
       </div>
     </section>
-    <section class="reviews">
-      <h1>Reviews</h1>
+    <section class="reviews" id="contactus">
+      <h1>Reseñas</h1>
       <div class="reviews__wrapper">
         <article class="reviews__card">
           <div class="review-header">
             <div class="review-header__profile">
-              <img
-                src="./assets/reviews/profile-mock1.svg"
-                alt="profile image"
-              />
+              <img src="./assets/reviews/customer-1.png" alt="profile image" />
               <div class="review-header__name-country">
-                <p>Mia Lopez</p>
-                <p>Spain</p>
+                <p>Eliecer Guevara</p>
+                <p>Venezuela</p>
               </div>
             </div>
-            <p class="review-header__date">16.06.2022</p>
+            <img
+              class="review-header__icon"
+              src="./assets/reviews/google-icon.png"
+              alt=""
+            />
           </div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
-            purus sit amet luctus venenatis, lectus magna fringilla urna,
-            porttitor rhoncus dolor purus non enim praesent elementum facilisis
-            leo, vel
+            Excelente lugar para alojarse y descansar con tranquilidad y
+            comodidad, excelente atención, los recomiendo…
           </p>
         </article>
         <article class="reviews__card">
           <div class="review-header">
             <div class="review-header__profile">
-              <img
-                src="./assets/reviews/profile-mock2.svg"
-                alt="profile image"
-              />
+              <img src="./assets/reviews/customer-2.png" alt="profile image" />
               <div class="review-header__name-country">
-                <p>Mia Lopez</p>
-                <p>Spain</p>
+                <p>Beba Martinez</p>
+                <p>Venezuela</p>
               </div>
             </div>
-            <p class="review-header__date">16.06.2022</p>
+            <img
+              class="review-header__icon"
+              src="./assets/reviews/google-icon.png"
+              alt=""
+            />
           </div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
-            purus sit amet luctus venenatis, lectus magna fringilla urna,
-            porttitor rhoncus dolor purus non enim praesent elementum facilisis
-            leo, vel
+            Hemos pasado una noche en este hotel y la atención ha sido de
+            primera, todos los recepcionistas nos colaboraron en lo que
+            necesitábamos.
           </p>
         </article>
-        <div class="share-review">
-          <input type="text" class="share-review__text" />
-          <button class="btn share-review__share">Share</button>
-          <button class="btn share-review__more">More Reviews</button>
-        </div>
+        <article class="reviews__card">
+          <div class="review-header">
+            <div class="review-header__profile">
+              <img src="./assets/reviews/unkown-user.png" alt="profile image" />
+              <div class="review-header__name-country">
+                <p>Gabriela Variela</p>
+                <p>Venezuela</p>
+              </div>
+            </div>
+            <img
+              class="review-header__icon"
+              src="./assets/reviews/google-icon.png"
+              alt=""
+            />
+          </div>
+          <p>
+            Muy buena atención, instalaciones en buen estado. Excelente lugar
+            para quedarse con la familia.
+          </p>
+        </article>
       </div>
     </section>
-    <footer>
-      <iframe
-        class="location-map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d805.4228623502239!2d-72.22727040163147!3d7.771606447517073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e666c98785091f7%3A0xa7700f39d6fe1217!2sHotel%20MON%20Cricket!5e0!3m2!1sen!2sde!4v1665913840173!5m2!1sen!2sde"
-        width="600"
-        height="400"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+    <footer id="contact-us">
+      <div class="footer-wrapper">
+        <div class="footer__location">
+          <iframe
+            class="footer__location-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d805.4228623502239!2d-72.22727040163147!3d7.771606447517073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e666c98785091f7%3A0xa7700f39d6fe1217!2sHotel%20MON%20Cricket!5e0!3m2!1sen!2sde!4v1665913840173!5m2!1sen!2sde"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="footer__details">
+          <div class="footer__address">
+            <h2 class="footer__hotel-name">Mon Cricket Hotel</h2>
+            <p>Calle 12, esquina carrera 13</p>
+            <p>San Cristóbal - Táchira, Venezuela</p>
+            <h2 class="footer__phone-number">+58 424 75 35 548</h2>
+          </div>
+          <div class="footer__social-media">
+            <a
+              href="https://www.instagram.com/hotelmoncricket/"
+              target="_blank"
+            >
+              <img src="./assets/footer/instagram.svg" alt="" />
+            </a>
+            <a
+              href="https://www.tripadvisor.com/Hotel_Review-g316051-d1878903-Reviews-Mon_Cricket_Hotel-San_Cristobal_Andean_Region.html"
+              target="_blank"
+            >
+              <img src="./assets/footer/trip.svg" alt="" />
+            </a>
+          </div>
+          <span class="footer__rights">2022 &#169; All rights reserved</span>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

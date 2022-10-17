@@ -1,6 +1,5 @@
 .about-us {
-  display: grid;
-  grid-template-columns: 1fr 24rem;
+  display: flex;
   align-items: center;
   max-width: var(--content-max-width);
   margin: auto;

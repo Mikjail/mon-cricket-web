@@ -4,8 +4,7 @@
 
 .rooms__wrapper {
   max-width: var(--content-max-width);
-  display: grid;
-  grid-template-columns: 27rem 1fr;
+  display: flex;
   align-items: center;
   margin: auto;
 }
@@ -17,6 +16,7 @@
 
 .rooms__img {
   border-right: 1px solid var(--black);
+  padding-right: 6rem;
 }
 
 .rooms__img img {

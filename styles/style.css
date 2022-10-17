@@ -4,6 +4,11 @@ body {
   font-family: "Optima";
 }
 
+main {
+  width: 100%;
+  height: 100%;
+}
+
 .main {
   display: block;
   background-image: url("../assets/main//background.svg");
@@ -50,4 +55,8 @@ body {
   box-shadow: var(--img-shadow);
   border: none;
   border-radius: 0.5rem;
+}
+
+* {
+  scroll-behavior: smooth !important;
 }

@@ -1,12 +1,45 @@
 footer {
-  display: flex;
-  align-items: center;
+  height: 300px;
   background-color: var(--primary);
-  height: 600px;
+  padding: 3rem 0;
 }
 
-footer .location-map {
-  height: 400px;
-  width: 600px;
+.footer-wrapper {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  max-width: var(--content-max-width);
+  margin: auto;
+  height: 100%;
+}
+.footer__location {
+  display: flex;
+  justify-content: center;
+  border-right: 2px solid var(--white);
+  width: 100%;
+}
+
+.footer__location-map {
+  width: 80%;
+  max-height: 300px;
   border-radius: 1rem;
+}
+
+.footer__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.footer__address {
+  color: white;
+}
+
+.footer__hotel-name {
+  margin: 0 0 2rem 0;
+}
+
+.footer__rights {
+  color: var(--white);
 }
