@@ -1,7 +1,9 @@
 .amenities {
   max-width: var(--content-max-width);
   margin: auto;
+  padding-top: 8.625rem;
   padding-bottom: 5.625rem;
+  background: url(../assets/palm-leaf-right.svg) no-repeat 30% 0;
 }
 
 .amenities h1,

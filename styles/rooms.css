@@ -1,5 +1,6 @@
 .rooms {
-  padding-bottom: 5.625rem;
+  padding-bottom: 3.625rem;
+  background: url(../assets/palm-leaf-left.svg) no-repeat 69% 55%;
 }
 
 .rooms__wrapper {
@@ -7,6 +8,8 @@
   display: flex;
   align-items: center;
   margin: auto;
+  position: relative;
+  bottom: 3rem;
 }
 
 .rooms h1 {
