@@ -31,3 +31,72 @@
 .rooms__content {
   padding-left: 2rem;
 }
+
+.rooms__mobile-contact-us {
+  display: none;
+}
+
+.rooms__mobile-bg {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .rooms {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 5rem;
+    padding-bottom: 0;
+    background-position: 20% 100%;
+  }
+
+  .rooms__wrapper {
+    margin-top: 5rem;
+    display: block;
+    bottom: 0;
+  }
+
+  .rooms h1 {
+    text-align: center;
+  }
+
+  .rooms__img {
+    padding-right: 0;
+    border: none;
+    position: relative;
+  }
+
+  .rooms__img img {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .rooms__content {
+    position: absolute;
+    top: 8rem;
+    margin: 0 3rem;
+    padding: 0.5rem;
+    z-index: 900;
+  }
+
+  .rooms__mobile-bg {
+    display: block;
+    position: absolute;
+    margin: 0 3rem;
+    background-color: var(--white);
+    top: 8rem;
+    right: 0;
+    left: 0;
+    bottom: -5rem;
+    opacity: 0.8;
+  }
+
+  .rooms__mobile-contact-us {
+    display: flex;
+    text-decoration: none;
+    margin: auto;
+    width: 9rem;
+    height: 2.75rem;
+  }
+}
