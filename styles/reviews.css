@@ -9,11 +9,12 @@
 .reviews__wrapper {
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 .reviews__card {
   display: grid;
-  width: 20.5rem;
+  max-width: 20.5rem;
   padding: 1rem;
   box-shadow: var(--img-shadow);
   border-radius: 1rem;
@@ -57,4 +58,17 @@
 .share-review input,
 .share-review button {
   width: 100%;
+}
+
+@media screen and (max-width: 1025px) {
+  .reviews {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .reviews__wrapper {
+    justify-content: center;
+  }
+  .reviews__card:last-child {
+    display: none;
+  }
 }
