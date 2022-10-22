@@ -26,8 +26,27 @@
   box-shadow: var(--img-shadow);
   width: 13rem;
   padding: 3rem 0;
+  background-color: var(--white);
 }
 
 .card h3 {
   text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .amenities {
+    text-align: center;
+    padding-top: 0;
+    background: url(../assets/palm-leaf-right.svg) no-repeat 80% 50%;
+  }
+  .amenities__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 2.5rem 1rem;
+  }
+  .card {
+    max-height: 8rem;
+    max-width: 10rem;
+  }
 }

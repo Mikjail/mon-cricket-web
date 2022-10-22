@@ -18,6 +18,7 @@
   padding: 1rem;
   box-shadow: var(--img-shadow);
   border-radius: 1rem;
+  background-color: var(--white);
 }
 
 .review-header {
@@ -70,5 +71,17 @@
   }
   .reviews__card:last-child {
     display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .reviews {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .reviews h1 {
+    text-align: center;
+  }
+  .reviews__wrapper {
+    flex-direction: column;
   }
 }

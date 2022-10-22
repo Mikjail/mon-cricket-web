@@ -10,6 +10,14 @@ main {
   height: 100%;
 }
 
+* {
+  scroll-behavior: smooth !important;
+}
+
+a {
+  text-decoration: none;
+}
+
 .btn {
   display: flex;
   align-items: center;
@@ -21,12 +29,4 @@ main {
   box-shadow: var(--img-shadow);
   border: none;
   border-radius: 0.5rem;
-}
-
-* {
-  scroll-behavior: smooth !important;
-}
-
-.separator {
-  flex-grow: 1;
 }

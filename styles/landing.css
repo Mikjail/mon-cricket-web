@@ -50,19 +50,19 @@
   }
 
   .land-message h3 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .land-message h1 {
-    font-size: 3rem;
+    font-size: 1.875rem;
     margin-top: 1rem;
   }
   .land-message__mobile-contact-us {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 10rem;
-    height: 3rem;
+    width: 8.375rem;
+    height: 2.4375rem;
     margin: 0 auto 9rem auto;
     background-color: var(--bg-white);
     color: var(--black);
