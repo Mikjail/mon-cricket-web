@@ -77,6 +77,8 @@
   .reviews {
     padding-top: 0;
     padding-bottom: 0;
+    background-position: 50% 60%;
+    background-size: 10rem;
   }
   .reviews h1 {
     text-align: center;

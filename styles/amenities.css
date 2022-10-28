@@ -37,7 +37,7 @@
   .amenities {
     text-align: center;
     padding-top: 0;
-    background: url(../assets/palm-leaf-right.svg) no-repeat 35% 46%;
+    background-position: 35% 46%;
     background-size: 10rem;
   }
 
