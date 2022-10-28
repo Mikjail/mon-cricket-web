@@ -37,16 +37,24 @@
   .amenities {
     text-align: center;
     padding-top: 0;
-    background: url(../assets/palm-leaf-right.svg) no-repeat 80% 50%;
+    background: url(../assets/palm-leaf-right.svg) no-repeat 35% 46%;
+    background-size: 10rem;
   }
+
   .amenities__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     padding: 2.5rem 1rem;
   }
+
   .card {
-    max-height: 8rem;
-    max-width: 10rem;
+    min-height: 10.625rem;
+    max-width: 8rem;
+    padding: 0 1rem;
+  }
+
+  .card img {
+    width: 3.125rem;
   }
 }
