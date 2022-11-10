@@ -1,3 +1,7 @@
+THIS IS A WIP.
+
+Web: https://www.hotelmoncricket.com
+
 Mon Cricket Hotel Website
 
 Tech:
