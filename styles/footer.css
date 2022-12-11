@@ -86,7 +86,7 @@ footer {
     border: none;
     width: auto;
     background-color: var(--primary);
-    padding: 2rem;
+    padding: 1rem;
   }
 
   .footer__location-map {
