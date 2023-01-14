@@ -112,16 +112,17 @@
         <img src="./assets/about-us/venezuelan-map.svg" alt="Venezuelan map" />
       </div>
     </section>
+    <img
+      src="./assets/about-us/mountain.svg"
+      alt="Los Andes Mountain"
+      class="about-us__mountain-img"
+    />
     <section class="rooms" id="rooms">
-      <img
-        src="./assets/about-us/mountain.svg"
-        alt="Los Andes Mountain"
-        class="about-us__mountain-img"
-      />
       <div class="rooms__wrapper">
         <div class="rooms__img">
           <h1>Habitaciones</h1>
           <div class="slideshow-container">
+            <a class="prev" onclick="plusSlides(-1)"> </a>
             <!-- Full-width images with number and caption text -->
             <div class="my-slides fade">
               <img
@@ -136,37 +137,30 @@
                 alt="Room triple available in Hotel Mon Cricket"
               />
             </div>
-
             <div class="my-slides fade">
               <img
                 src="./assets/rooms/cuadruple.svg"
                 alt="Room Cuadruple available in Mon Cricket Hotel"
               />
             </div>
-
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)"> </a>
-            <a class="next" onclick="plusSlides(1)"></a>
-          </div>
-          <div style="text-align: center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
           </div>
           <!-- <img src="./assets/rooms/deluxe.jpeg" alt="Room Deluxe" /> -->
         </div>
-        <div class="rooms__content my-slides__description">
+        <div class="rooms__content">
           <h2 class="my-slide__title">Deluxe</h2>
           <h5>Tamaño 30 ms2</h5>
-          <p>
-            La mayoría de nuestras habitaciones tienen cama tipo matrimonial y
-            además estan equipadas con refrigerador y tv.
+          <p class="my-slide__description">
+            Comoda habitacion con cama king, baño de lujo, wifi y aire
+            acondicionado. Aquí puedes relajarte, desde el momento de tu llegada
+            con comodidades pensadas al detalle.
           </p>
-          <a href="#contact-us" class="btn rooms__mobile-contact-us"
+          <a
+            href="https://wa.me/584247639417"
+            class="btn rooms__mobile-contact-us"
             >Contactanos</a
           >
+          <a class="next" onclick="plusSlides(1)"></a>
         </div>
-
         <div class="rooms__mobile-bg"></div>
       </div>
     </section>
@@ -176,6 +170,9 @@
         <div class="card">
           <img src="./assets/amenities/parking.svg" alt="Parking Amenities" />
           <h3 class="card__title">Estacionamiento</h3>
+          <p class="card__description">
+            Contamos 12 puestos de estacionamiento cómodos.
+          </p>
         </div>
         <div class="card">
           <img
@@ -183,6 +180,9 @@
             alt="Wifi connection - Amenities"
           />
           <h3 class="card__title">WiFi</h3>
+          <p class="card__description">
+            Disponemos de routers en cada piso para una mejor navegación.
+          </p>
         </div>
 
         <div class="card">
@@ -190,15 +190,22 @@
             src="./assets/amenities/room-service.svg"
             alt="Room Service - Amenities"
           />
-          <h3 class="card__title">Servicio de Habitacion</h3>
+          <h3 class="card__title">Recepcion 24/7</h3>
+          <p class="card__description">
+            Mantenemos un equipo de recepcionistas listos 24/7 para brindar la
+            mejor atención.
+          </p>
         </div>
-
         <div class="card">
           <img
-            src="./assets/amenities/breakfast.svg"
-            alt="Breakfast - Amenities"
+            src="./assets/amenities/business-center.svg"
+            alt="Salon de Negocios - Amenities"
           />
-          <h3 class="card__title">Desayuno Incluido</h3>
+          <h3 class="card__title">Salon de Negocios</h3>
+          <p class="card__description">
+            Contamos con varios tipos de salones con capacidades que varían de
+            25 - 140 pax.
+          </p>
         </div>
       </div>
     </section>
@@ -300,6 +307,12 @@
           </div>
           <div class="footer__social-media">
             <a
+              class="social-media__icon social-media__whatsapp"
+              href="https://wa.me/584247639417"
+              target="_blank"
+            >
+            </a>
+            <a
               class="social-media__icon social-media__instagram"
               href="https://www.instagram.com/hotelmoncricket/"
               target="_blank"
@@ -323,17 +336,23 @@
       {
         title: "Deluxe",
         size: "30",
-        description: "",
+        description: `Comoda habitacion con cama king, baño de lujo, wifi y aire
+            acondicionado. Aquí puedes relajarte, desde el momento de tu llegada
+            con comodidades pensadas al detalle.`,
       },
       {
         title: "Habitación Triple",
         size: "30",
-        description: "",
+        description: `Habitacion de tres plazas, con cama matrimonial + cama individual,
+         baño de primera, wifi, cable y aire acondicionado/ Especialmente para
+         familias de tres personas o equipos de trabajo o deporte.`,
       },
       {
         title: "Habitación Cuadruple",
         size: "30",
-        description: "",
+        description: `Habitacion de cuatro plazas, dos camas matrimoniales, baño de primera,
+         wifi, cable y aire acondicionado. Especialmente para familias de cuatro personas o 
+         equipos de trabajo o deporte.`,
       },
     ];
 
@@ -352,8 +371,13 @@
     function showSlides(n) {
       let i;
       let slides = document.getElementsByClassName("my-slides");
-      let dots = document.getElementsByClassName("dot");
-      let description = document.getElementsByClassName("my-slide__title");
+      let title = document.getElementsByClassName("my-slide__title");
+      let description = document.getElementsByClassName(
+        "my-slide__description"
+      );
+
+      if (n == 0) {
+      }
 
       if (n > slides.length) {
         slideIndex = 1;
@@ -364,12 +388,10 @@
       for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
       }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      description[0].innerHTML = habitacitones[slideIndex - 1].title;
+
+      description[0].innerHTML = habitacitones[slideIndex - 1].description;
+      title[0].innerHTML = habitacitones[slideIndex - 1].title;
       slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
     }
   </script>
 </html>

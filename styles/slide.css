@@ -12,10 +12,12 @@
 /* Next & previous buttons */
 .prev {
   background: url(/assets/arrow-left.svg) center no-repeat;
+  left: -4rem;
 }
 
 .next {
   background: url(/assets/arrow-right.svg) center no-repeat;
+  right: -4rem;
 }
 
 .prev,
@@ -26,18 +28,9 @@
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
+  height: 1rem;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
   user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
 }
 
 /* Caption text */
@@ -80,5 +73,15 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .next {
+    right: -2.5rem;
+  }
+  .prev {
+    left: 0;
+    top: 17rem;
   }
 }
