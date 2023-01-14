@@ -74,6 +74,26 @@ footer {
   background-image: url(../assets/footer/whatsapp.svg);
 }
 
+.footer__phone-number {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.footer__phone-number:first-of-type {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.footer__phone-number:first-of-type a {
+  margin: 0;
+}
+
+.footer__phone-number:first-of-type img {
+  width: 20px;
+  margin-right: 0.2rem;
+}
+
 @media screen and (max-width: 900px) {
   footer {
     background-color: var(--dark-bg);
@@ -129,25 +149,6 @@ footer {
   .footer__social-media {
     display: flex;
     gap: 0.625rem;
-  }
-  .footer__phone-number {
-    display: block;
-    margin-bottom: 1rem;
-  }
-
-  .footer__phone-number:first-of-type {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-  }
-
-  .footer__phone-number:first-of-type a {
-    margin: 0;
-  }
-
-  .footer__phone-number:first-of-type img {
-    width: 20px;
-    margin-right: 0.2rem;
   }
 
   .social-media__instagram {
