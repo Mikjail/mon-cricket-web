@@ -59,10 +59,10 @@
   .rooms {
     display: flex;
     flex-direction: column;
-    height: 75vh;
     padding: 0;
     background-position: 50% 100%;
     background-size: 10rem;
+    height: 100vh;
   }
 
   .rooms__wrapper {
@@ -89,13 +89,15 @@
 
   .rooms__content {
     position: absolute;
-    display: flex;
-    top: 13rem;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    top: 16rem;
     margin: 0 3rem;
     z-index: 900;
-    flex-direction: column;
     padding: 0 1rem;
     color: var(--dark-gray);
+    padding: 1rem;
+    height: 18rem;
   }
 
   .rooms__content h2,
@@ -113,10 +115,10 @@
     position: absolute;
     margin: 0 3rem;
     background-color: var(--white);
-    top: 12rem;
+    top: 16rem;
     right: 0;
     left: 0;
-    bottom: -6rem;
+    bottom: -15rem;
     opacity: 0.8;
   }
 

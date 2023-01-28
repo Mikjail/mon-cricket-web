@@ -26,6 +26,7 @@
   width: 13rem;
   padding: 2.5rem 0.5rem;
   background-color: var(--white);
+  gap: 1rem;
 }
 
 .card h3 {
@@ -63,7 +64,7 @@
 
   .card {
     min-height: 10.625rem;
-    max-width: 8rem;
+    width: auto;
     padding: 0 1rem;
     justify-content: center;
   }

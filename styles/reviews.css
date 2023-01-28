@@ -17,6 +17,7 @@
 
 .reviews__card {
   display: grid;
+  gap: 1rem;
   max-width: 20.5rem;
   padding: 1rem;
   box-shadow: var(--img-shadow);
