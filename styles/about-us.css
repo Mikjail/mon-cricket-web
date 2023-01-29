@@ -62,3 +62,11 @@
     position: relative;
   }
 }
+@media screen and (min-width: 950px) and (max-width: 1170px) {
+  .about-us__img {
+    padding-right: 3rem;
+  }
+  .about-us__content {
+    padding-left: 3rem;
+  }
+}

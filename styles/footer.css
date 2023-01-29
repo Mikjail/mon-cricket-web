@@ -167,3 +167,15 @@ footer {
     background-image: url(../assets/footer/trip-mobile.svg);
   }
 }
+
+@media screen and (min-width: 525px) and (max-width: 900px) {
+  .footer__location {
+    padding: 1rem;
+  }
+  .footer__location-map {
+    height: 18rem;
+  }
+  .reviews__wrapper {
+    flex-direction: row;
+  }
+}
